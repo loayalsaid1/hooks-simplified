@@ -3,15 +3,14 @@ import React, { useEffect, useRef, useState } from 'react';
 
 export default function Main() {
 	const [name, setName] = useState('');
-	const inputRef = useRef();
+	const prevName = useRef('');
 
-	const focusInput = () => {
-		inputRef.current.focus();
-	}
-	
+	useEffect(() => {
+		prevName.current = name;
+	})
+
 	return <>
-		<input ref={inputRef} type="text" value={name} onChange={(event) => setName(event.target.value)} />
-		<div> My name is: {name}</div>
-		<button onClick={focusInput} >Focus</button>
+		<input type="text" value={name} onChange={(event) => setName(event.target.value)} />
+		<div> My name is: {name} and it used to be { prevName.current}</div>
 	</>
 }
