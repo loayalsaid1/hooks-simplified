@@ -3,15 +3,15 @@ import React, { useEffect, useRef, useState } from 'react';
 
 export default function Main() {
 	const [name, setName] = useState('');
-	const renderCount = useRef(0);
+	const inputRef = useRef();
 
-	useEffect(() => {
-		renderCount.current += 1;
-	});
-
+	const focusInput = () => {
+		inputRef.current.focus();
+	}
+	
 	return <>
-		<input type="text" value={name} onChange={(event) => setName(event.target.value)} />
+		<input ref={inputRef} type="text" value={name} onChange={(event) => setName(event.target.value)} />
 		<div> My name is: {name}</div>
-		<div>I rendered { renderCount.current}</div>
+		<button onClick={focusInput} >Focus</button>
 	</>
 }
