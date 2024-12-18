@@ -1,21 +1,13 @@
 import React, { useState } from 'react';
 import FunctionContextComponent from './FunctionContextComponent';
-import ClassContextComponent from './ClassContextComponent';
-
-export const ThemeContext = React.createContext();
+import { ThemeProvide, useUpdateTheme } from './ThemContext';
 
 export default function Main() {
-	const [isDark, setIsDark] = useState(true);
-	
-	const toggleTheme = () => {
-		setIsDark(currentValue => !currentValue );
-	}
+	const toggleTheme = useUpdateTheme();
 
 	return (
-		<ThemeContext.Provider value={isDark}>
-			<button onClick={toggleTheme}> Toggle Theme </button>
+		<ThemeProvide>
 			<FunctionContextComponent />
-			<ClassContextComponent />
-		</ThemeContext.Provider>
+		</ThemeProvide>
 	)
 }
