@@ -1,10 +1,9 @@
 import React, { useContext, useState } from 'react';
-import { ThemeContext, useTheme, useUpdateTheme } from './ThemContext';
+import { ThemeContext, useTheme,  } from './ThemContext';
 
 
 export default function FunctionContextComponent() {
-	const isDark = useTheme();
-	const toggleTheme = useUpdateTheme();
+	const [isDark, toggleTheme] = useTheme();
 
 	const styles = {
 		margin: '2rem',

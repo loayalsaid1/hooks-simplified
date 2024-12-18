@@ -5,11 +5,7 @@ export const ThemeContext = React.createContext();
 export const ThemeUpdaterContext = React.createContext();
 
 export function useTheme() {
-	return useContext(ThemeContext)
-}
-
-export function useUpdateTheme() {
-	return useContext(ThemeUpdaterContext);
+	return [useContext(ThemeContext), useContext(ThemeUpdaterContext)];
 }
 
 export function ThemeProvide({ children}) {
