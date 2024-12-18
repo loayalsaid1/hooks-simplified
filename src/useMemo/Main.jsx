@@ -8,16 +8,23 @@ export default function Main() {
 		return doubleNumberSlowly(number);
 	}, [number]);
 
-	const style = {
-		color: isDark? '#ccc' : '#333',
-		backgroundColor: isDark? '#333' : '#ccc',
-	}
+	
+	const theme = useMemo(() => {
+		return {
+			color: isDark? '#ccc' : '#333',
+			backgroundColor: isDark? '#333' : '#ccc',
+		}
+	}, [isDark])
+
+	useEffect(() => {
+		console.log('themeChanged');
+	}, [theme])
 
 	return (
 		<>
 			<input type='number' value={number} onChange={(e) => setNumber(e.target.value)} />
-			<button onClick={() => setIsDark(currentValue => !currentValue)}>Toggle Theme</button>
-			<div style={style}>Double number: {doubleNumber}</div>
+			<button onClick={() => setIsDark(currentValue => !currentValue)}>Toggle theme</button>
+			<div style={theme}>Double number: {doubleNumber}</div>
 		</>
 	)
 }
