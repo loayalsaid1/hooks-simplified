@@ -3,7 +3,8 @@ import './App.css';
 // import Main from './useRef/Main';
 // import Main from './useMemo/Main';
 // import Main from './useCallback/Main';
-import Main from './useReducer/Main';
+// import Main from './useReducer/Main';
+import Main from './useTransition/Main';
 
 function App() {
   return (
