@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
 import useOnlineStatus from './useOnlineStatus';
 
 export default function Main() {
-	const online = useOnlineStatus();
+    const online = useOnlineStatus();
 
-	return <div>{online ? '✅ Online'  : '❌ Offline'}</div>
+    return (
+        <>
+            <div>{online ? '✅ Online' : '❌ Offline'}</div>
+        </>
+    );
 }
