@@ -4,7 +4,9 @@ import './App.css';
 // import Main from './useMemo/Main';
 // import Main from './useCallback/Main';
 // import Main from './useReducer/Main';
-import Main from './useTransition/Main';
+// import Main from './useTransition/Main';
+// import Main from './useDeferredValue/Main';
+import Main from './useLayoutEffect/Main';
 
 function App() {
   return (
