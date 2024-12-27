@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useDebugValue, useEffect } from 'react'
 
 export default function useOnlineStatus() {
 	const [onlineStatus, setOnlineStatus] = React.useState(navigator.onLine);
 
+	useDebugValue(formatStatus(onlineStatus))
 	const setOnline = () => setOnlineStatus(true);
 	const setOffline = () => setOnlineStatus(false);
 
@@ -18,4 +19,8 @@ export default function useOnlineStatus() {
 	}, []);
 
 	return onlineStatus;
+}
+
+const formatStatus = (status) => {
+	return status ? 'Yeah.. it\'s online' : 'Nope...🙄';
 }
