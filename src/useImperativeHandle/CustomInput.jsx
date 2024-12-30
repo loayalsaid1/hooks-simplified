@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useImperativeHandle } from 'react'
 
 function CustomInput({ style, ...props}, ref) {
+
+	useImperativeHandle(ref, () => {
+		return {
+			alertHi: () => alert('hi'),
+			alertBye: () => alert('bye')
+		}
+	}, []);
 	
 	return (
 		<input 
