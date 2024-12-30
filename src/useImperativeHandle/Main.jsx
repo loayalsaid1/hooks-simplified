@@ -1,14 +1,18 @@
 import React, { useRef, useState } from 'react'
 import CustomInput from './CustomInput';
+import Modal from './Modal';
 
 export default function Main() {
-	const [value, setValue] = useState('');
-	const inputRef = useRef(null);
+	const [isOpen, setIsOpen] = useState(false);
+
+	const openModal = () => setIsOpen(true);
+	const closeModal = () => setIsOpen(false);
+
 
 	return (
 		<>
-		<CustomInput type="text" value={value} onChange={(e) => setValue(e.target.value)} ref={inputRef} />
-		<button onClick={() => inputRef.current.alertHi()}>Focus</button>
+		<button onClick={openModal}>Show Modal</button>
+		<Modal isOpen={isOpen} onClose={closeModal} />
 		</>
 	)
 }
