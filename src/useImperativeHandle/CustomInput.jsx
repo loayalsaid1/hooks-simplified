@@ -1,8 +1,10 @@
 import React from 'react'
 
-export default function CustomInput({ style, ...props}) {
+function CustomInput({ style, ...props}, ref) {
+	
 	return (
 		<input 
+			ref={ref}
 			{...props}
 			style={{
 				padding: '.25rem',
@@ -17,3 +19,5 @@ export default function CustomInput({ style, ...props}) {
 
 	)
 }
+
+export default React.forwardRef(CustomInput)

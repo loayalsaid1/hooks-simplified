@@ -7,7 +7,7 @@ export default function Main() {
 
 	return (
 		<>
-		<input type="text" value={value} onChange={(e) => setValue(e.target.value)} ref={inputRef} />
+		<CustomInput type="text" value={value} onChange={(e) => setValue(e.target.value)} ref={inputRef} />
 		<button onClick={() => inputRef.current.focus()}>Focus</button>
 		</>
 	)
