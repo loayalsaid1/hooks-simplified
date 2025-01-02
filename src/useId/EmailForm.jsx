@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useId } from 'react'
 
 export default function EmailForm() {
+	// if to elemetns rendered in teh screen.. this means.. same Id will be used more that once..!
+	const id = useId();
+
 	return (
 		<>
-		<label htmlFor="email">Email: </label>
-		<input id="email" type='text' />
+		<label htmlFor={id}>Email: </label>
+		<input id={id} type='text' />
 		</>
 	)
 }
