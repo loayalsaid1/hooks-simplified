@@ -10,7 +10,8 @@ import './App.css';
 // import Main from './useDebugValue/Main';
 // import Main from './useImperativeHandle/Main';
 // import Main from './useId/Main';
-import Main from './customHooks/useLocalStorage/Main';
+// import Main from './customHooks/useLocalStorage/Main';
+import Main from './customHooks/useUpdateLogger/Main';
 
 function App() {
   return (
