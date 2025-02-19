@@ -14,7 +14,8 @@ import './App.css';
 // import Main from './customHooks/useLocalStorage/Main';
 // import Main from './customHooks/useUpdateLogger/Main';
 // import Main from './customHooks/useToggle/Main';
-import Main from './customHooks/useTimeout/Main';
+// import Main from './customHooks/useTimeout/Main';
+import Main from './customHooks/useDebounce/Main';
 
 
 function App() {
