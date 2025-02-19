@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import useUpdateEffect from './useUpdateEffect.hook';
 
 export default function Main() {
 	const [count, setCount] = useState(10);
 
 	// This will run even at the first time.. where count never changed
-	useEffect(() => alert(count), [count]);
+	useUpdateEffect(() => alert(count), [count]);
 	return (
 		<>
 		<p>{count}</p>
