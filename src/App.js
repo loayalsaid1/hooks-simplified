@@ -16,7 +16,8 @@ import './App.css';
 // import Main from './customHooks/useToggle/Main';
 // import Main from './customHooks/useTimeout/Main';
 // import Main from './customHooks/useDebounce/Main';
-import Main from './customHooks/useUpdateEffect/Main';
+// import Main from './customHooks/useUpdateEffect/Main';
+import Main from './customHooks/useArray/Main';
 
 
 function App() {
