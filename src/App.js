@@ -18,7 +18,8 @@ import './App.css';
 // import Main from './customHooks/useDebounce/Main';
 // import Main from './customHooks/useUpdateEffect/Main';
 // import Main from './customHooks/useArray/Main';
-import Main from './customHooks/usePrevious/Main';
+// import Main from './customHooks/usePrevious/Main';
+import Main from './customHooks/useStateWithHistory/Main';
 
 
 function App() {
