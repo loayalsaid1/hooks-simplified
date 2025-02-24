@@ -21,7 +21,8 @@ import './App.css';
 // import Main from './customHooks/usePrevious/Main';
 // import Main from './customHooks/useStateWithHistory/Main';
 // import Main from './customHooks/useStorage/Main';
-import Main from './customHooks/useAsync/Main';
+// import Main from './customHooks/useAsync/Main';
+import Main from './customHooks/useFetch/Main';
 
 
 function App() {
