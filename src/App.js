@@ -20,7 +20,8 @@ import './App.css';
 // import Main from './customHooks/useArray/Main';
 // import Main from './customHooks/usePrevious/Main';
 // import Main from './customHooks/useStateWithHistory/Main';
-import Main from './customHooks/useStorage/Main';
+// import Main from './customHooks/useStorage/Main';
+import Main from './customHooks/useAsync/Main';
 
 
 function App() {
