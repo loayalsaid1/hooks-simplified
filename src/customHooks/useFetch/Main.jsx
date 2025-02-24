@@ -1,27 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import useFetch from './useFetch.hook';
 
 export default function Main() {
 	const [id, setId] = useState(1);
-	const [value, setValue] = useState(null);
-	const [error, setError] = useState(null);
-	const [loading, setLoading] = useState(false);
-
-	useEffect(() => {
-		setLoading(true);
-		fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
-			.then(res => {
-				if (res.ok) {
-					return res.json();
-				} else {
-					res.json().then(json => {
-						throw new Error(json.message);
-					})
-				}
-			})
-			.then(data => setValue(data))
-			.catch (error => setError(error))
-			.finally(() => setLoading(false));
-	}, [id]);
+	const {loading, error, value} = useFetch(
+		`https://jsonplaceholder.typicode.com/todos/${id}`,
+		{},
+		[id]
+	)
 
 	return (
 		<div>
