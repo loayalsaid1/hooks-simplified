@@ -1,9 +1,17 @@
 import React, { useState } from 'react'
+import useAsync from './useAsync.hook';
+
 
 export default function Main() {
 	const [shouldSucceed, setShouldSucceed] = useState(true);
-	// const {loading, value, error} = useAsync(someAsyncLogic());
-	const {loading, value, error} = {loading: false, value: 'Hi', error: null};
+
+	const {loading, value, error} = useAsync(() => {
+		return new Promise((resolve, reject) => {
+			setTimeout(() => {
+				shouldSucceed ? resolve('Hi') : reject('Error');
+			}, 1000)
+		})
+	}, [shouldSucceed]);
 
 	return (
 		<div>
