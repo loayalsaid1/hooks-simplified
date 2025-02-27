@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import useFetch from './customHooks/useFetch/useFetch.hook';
 import { hookContext } from './MainHooksComponent'
 import SourceCodeFile from './SourceCodeFile';
+import useUpdateEffect from './customHooks/useUpdateEffect/useUpdateEffect.hook';
 
 export default function HookCode() {
 	const { hookName, isCustomHook } = useContext(hookContext);
@@ -13,6 +14,16 @@ export default function HookCode() {
 		[hookName, isCustomHook],
 	)
 
+	useUpdateEffect(() => {
+		if (!loading && !error && fileNames.length) {
+			const index = fileNames.findIndex(file => file.name === "Main.jsx");
+			if (index !== -1) {
+				const mainFile = fileNames[index];
+				fileNames.splice(index, 1);
+				fileNames.unshift(mainFile);
+			}
+		}
+	}, [fileNames])
 	return (
 		<section>
 			<h5  className='subtitle'>👩‍💻 Hook Code</h5>
