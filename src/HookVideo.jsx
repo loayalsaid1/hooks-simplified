@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { hookContext } from './MainHooksComponent';
 
 export default function HookVideo() {
-  const hookName = useContext(hookContext);
+  const { hookName } = useContext(hookContext);
 
   return (
     <section>

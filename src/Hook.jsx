@@ -7,14 +7,14 @@ import HookVideo from './HookVideo';
 
 
 export default function Hook() {
-	const hookName = useContext(hookContext);
+	const { hookName } = useContext(hookContext);
 	
 	return (
 		<div>
 			<h1>{hookName}</h1>
 			<HookDemo />
-			<HookCode />
 			<HookNotes />
+			<HookCode />
 			<HookVideo />
 		</div>
 	)

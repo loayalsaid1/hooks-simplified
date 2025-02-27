@@ -3,7 +3,7 @@ import { hookContext } from './MainHooksComponent'
 import hooks from './Hooks'
 
 export default function HookDemo() {
-	const hookName = useContext(hookContext);
+	const { hookName } = useContext(hookContext);
 	const Main = hooks[hookName].main;
 
 	return (

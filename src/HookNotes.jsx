@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import { hookContext } from './MainHooksComponent'
 export default function HookNotes() {
-	const hookName = useContext(hookContext);
+	const { hookName } = useContext(hookContext);
 
 
 	return (
