@@ -8,7 +8,7 @@ export default function MainHooksComponent() {
   const [hookName, setHookName] = useState();
 
   return (
-    <div>
+    <main>
       <HooksList setHookName={setHookName} />
       <hr />
 			
@@ -19,6 +19,6 @@ export default function MainHooksComponent() {
           <Hook />
         </hookContext.Provider>
       )}
-    </div>
+    </main>
   );
 }

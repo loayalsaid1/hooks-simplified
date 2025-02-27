@@ -30,9 +30,7 @@ import MainHooksComponent from './MainHooksComponent';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <MainHooksComponent />
-      </header>
+      <MainHooksComponent />
     </div>
   );
 }
