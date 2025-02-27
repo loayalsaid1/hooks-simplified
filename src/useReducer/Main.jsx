@@ -4,7 +4,7 @@ const actions = {
 	DECREMENT: 'decrement',
 	INCREMENT: 'increment',	
 }
-ظ
+
 function reducer (state, action) {
 	switch (action.type) {
 		case actions.INCREMENT:

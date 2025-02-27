@@ -23,18 +23,17 @@ import './App.css';
 // import Main from './customHooks/useStorage/Main';
 // import Main from './customHooks/useAsync/Main';
 // import Main from './customHooks/useFetch/Main';
-// import Main from './customHooks/useScript/Main';
-import MainHooksComponent from './MainHooksComponent';
+import Main from './customHooks/useScript/Main';
 
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <MainHooksComponent />
-      </header>
-    </div>
-  );
+	return (
+		
+		<div className="App">
+			<header className="App-header">
+			</header>
+		</div>
+	);
 }
 
 export default App;

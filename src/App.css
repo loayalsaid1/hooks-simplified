@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+section {
+  margin-block: 2rem;
+  padding: .5rem;
+
+  background: rgba(255, 255, 255, .15);
+
+  font-size: 1.2rem;
+}
+
+section .subtitle {
+  margin-bottom: .75rem;
+  font-size: 1.5rem;
+}
+section p {
+  margin-top: .5rem;
+  color: #E0E0E0;
 }
