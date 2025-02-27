@@ -27,20 +27,23 @@ export default function HookCode() {
 	return (
 		<section>
 			<h5  className='subtitle'>👩‍💻 Hook Code</h5>
-			<p>This is <strong>{hookName}</strong> hook, Code will be added when internet gets back (Hopefully 😉)</p>
-			{
-				loading ? (
-					<p>Loading...</p>
-				) : (
-					error ? (
-					<p>Error Loading Files</p>
-				) : (
-					fileNames.map((fileName, index) => {
-						return <SourceCodeFile key={index} fileName={fileName.name} downloadUrl={fileName.download_url} />
-					})
-				)
-				)
-			}
+			<p>This is <strong>{hookName}</strong> hook. Your anchor is <em>Main.jsx</em></p>
+			<div class="source-code">
+				{
+					loading ? (
+						<p>Loading...</p>
+					) : (
+						error ? (
+						<p>Error Loading Files</p>
+					) : (
+						fileNames.map((fileName, index) => {
+							return <SourceCodeFile key={index} fileName={fileName.name} downloadUrl={fileName.download_url} />
+						})
+					)
+					)
+				}
+			</div>
+
 		</section>
 	)
 }
