@@ -1,7 +1,7 @@
 import React from 'react';
 import useAsync from './customHooks/useAsync/useAsync.hook';
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function SourceCodeFile({ fileName, downloadUrl }) {
   const { loading, error, value } = useAsync(() => {
@@ -21,7 +21,7 @@ export default function SourceCodeFile({ fileName, downloadUrl }) {
         <div>{JSON.stringify(error)}</div>
       ) : (<>
 				<span>{fileName}</span>
-        <SyntaxHighlighter language="jsx" style={atomDark}>
+        <SyntaxHighlighter language="javascript" style={vscDarkPlus}>
           {value}
         </SyntaxHighlighter>
 				</>
