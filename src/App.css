@@ -52,3 +52,9 @@ pre {
 .source-code {
   margin-top: 1.5rem;
 }
+
+.hook-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 1.5rem;
+}
