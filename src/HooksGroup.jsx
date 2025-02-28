@@ -1,11 +1,11 @@
 import React from 'react'
 import hooks from './Hooks';
 
-export default function HooksGroup({title, hooksNames, setHookName, setIsCustomHook}) {
+export default function HooksGroup({title, hooksNames, setHookName, setHookData}) {
 
 	const handleClick = (name) => {
 		setHookName(name);
-		setIsCustomHook(hooks[name].isCustomHook);
+		setHookData(hooks[name]);
 	}
 
 	return (

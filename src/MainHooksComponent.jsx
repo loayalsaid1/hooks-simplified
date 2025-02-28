@@ -7,17 +7,17 @@ export const hookType = React.createContext();
 
 export default function MainHooksComponent() {
   const [hookName, setHookName] = useState();
-  const [isCustomHook, setIsCustomHook] = useState();
+  const [hookData, setHookData] = useState();
 
   return (
     <main>
-      <HooksList setHookName={setHookName} setIsCustomHook={setIsCustomHook}/>
+      <HooksList setHookName={setHookName} setHookData={setHookData}/>
       <hr />
 			
       {!hookName ? (
         <div>Choose a hook from the list above</div>
       ) : (
-        <hookContext.Provider value={{hookName, isCustomHook}}>
+        <hookContext.Provider value={{hookName, ...hookData}}>
           <Hook />
         </hookContext.Provider>
       )}
