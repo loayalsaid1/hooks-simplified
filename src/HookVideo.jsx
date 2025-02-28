@@ -2,13 +2,13 @@ import React, { useContext } from 'react';
 import { hookContext } from './MainHooksComponent';
 
 export default function HookVideo() {
-  const { hookName, videoLink } = useContext(hookContext);
+  const { hookName, videoLink, isCustomHook } = useContext(hookContext);
 
   return (
     <section>
       <h5 className="subtitle">📺 Hook Vidoe</h5>
       <p>
-        Here is a tutorial explaining <strong>{hookName}</strong>
+        Here is a tutorial explaining the <strong>{hookName}</strong> {isCustomHook && 'among other 4'}
       </p>
       <small>Again... WRITE THE CODE YOURSELF.. Bit by bit untill it's reasonable at your mind... not at one session even..</small>
       <iframe
