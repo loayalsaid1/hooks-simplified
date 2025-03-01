@@ -1,0 +1,6 @@
+useMemo(() => {return some value here}, [Like useEffect.. it's a dependency array.. revaluate when anything here changes])
+
+That could be an object.. or a slow function and you are storing hte return value of it
+
+useMemo(() => return slowFunction(x), [x])
+useMemo(() => {return { hello: name? name: 'worls'}}, [name])

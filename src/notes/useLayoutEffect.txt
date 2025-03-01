@@ -1,0 +1,5 @@
+UseLayoutEffect is just like useEffect..
+
+it's just runts sync not async before React repaints the screen. 
+so if you render and want to access for example a size or position of a component and change something..  
+you can do it in a useLayoutEffect so the screen is not painted and then flickers and do the change you want.

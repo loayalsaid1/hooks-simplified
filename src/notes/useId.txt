@@ -1,0 +1,17 @@
+const id = useId();
+
+a uniqueId per componentInstance.. 
+so.. if you have the same component being ran more that once in teh page.. and you need an Id for an element.. 
+use this instand of Math.random() for example.. 
+this is will be different in for each instance or element.. so taht you dont' have 2 elemetns with same id in one page
+
+
+for more that element with Id.. and for performance..
+❌❌❌const emailId = useId();
+❌❌❌const nameId = useId();
+
+✔✔✔ const id = useId();
+✔✔✔
+✔✔✔
+✔✔✔ <input id={`email-${id}`} />
+✔✔✔ <input id={`name-${id}`} />  

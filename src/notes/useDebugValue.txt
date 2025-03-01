@@ -1,0 +1,7 @@
+useDebugValue(value);
+
+in customHooks.. it put's {value}. -whatever it's type- as a label besides the hook name in the devtools.. 
+becomes an array of the hook used move than once
+
+
+make it useDebugValue(value, formatterFunction).. will 1. Add the return value.. 2.. it will only run when the ReactDevTools are open.. so it don't slowdown the app incase it's a slow operation.. being for formatting other sort of function

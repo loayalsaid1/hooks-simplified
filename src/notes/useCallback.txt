@@ -1,0 +1,5 @@
+useCallback(function, [Dependency array.. ot reevaluate the function or the refferecne when anythgn here changes])
+
+so.. the funfction versionof useMemo
+
+use with referential duplication
