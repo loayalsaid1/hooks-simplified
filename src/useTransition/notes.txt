@@ -1,0 +1,9 @@
+useTransition..
+It's just a away to say.. hay.. take those .. don't block execution.. execute them away and when you are done .. rerender
+and it's giving us a way to know when it's still running it's thign.. via isPending
+
+so it gives is a mean to start this transation... and a way to know when it's still pending
+
+1. startTransation... takes a funciton.. execute it on the side
+2. isPending .. the indicator
+const [ isPending, startTransation] = useTransation()

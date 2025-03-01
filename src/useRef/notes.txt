@@ -1,0 +1,9 @@
+const myRef = useRef(inital value);
+
+Like state but don't re-render
+
+object with 'current' property
+
+reference dom elements with ref prop
+
+values are in myRef.current

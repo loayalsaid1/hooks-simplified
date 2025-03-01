@@ -1,0 +1,12 @@
+I gate between the a specified value and the component..
+or you can name it a fasade over it.. 
+
+when a value is changing too much and something takes too much to evaluate using this value.. 
+you can do this ..
+
+const deferredInput = useDeferredValue(input);
+
+and use it everyware instead of input..
+when a rerender happen.. it evaluates immedietly with the old value.. and there fore hte other useMemo or useEffect for example will not run..because it saw no change.. 
+and when the input stays some time or may be 100ms with no change.. it rerenderes with last value;
+it fires a reernder in the background and when it's ready it apply it .. or someting like that

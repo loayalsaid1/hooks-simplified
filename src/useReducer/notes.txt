@@ -1,0 +1,5 @@
+Just like redux
+
+[state, dispatch] = useReducer(reducer, initialState);
+
+and the reducer.. like redux exactly... takes..state variable and action
