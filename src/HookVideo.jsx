@@ -5,7 +5,7 @@ export default function HookVideo() {
   const { hookName, videoLink, isCustomHook, documentation, hookBlogArticle } = useContext(hookContext);
 
   return (
-    <section>
+    <section id="video">
       <h5 className="subtitle">📺 Hook Vidoe</h5>
       <p>
         Here is a tutorial explaining the <strong>{hookName}</strong> {isCustomHook && 'among other 4'}

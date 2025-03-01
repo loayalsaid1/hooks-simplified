@@ -25,7 +25,7 @@ export default function HookCode() {
 		}
 	}, [fileNames])
 	return (
-		<section>
+		<section id="code">
 			<h5  className='subtitle'>👩‍💻 Hook Code</h5>
 			<p>This is <strong>{hookName}</strong> hook. Your anchor is <em>Main.jsx</em></p>
 			<div class="source-code">

@@ -19,7 +19,7 @@ export default function HookNotes() {
 	}, [hookName])
 
 	return (
-		<section>
+		<section id="notes">
 			<h5  className='subtitle'>📝My own Small notes on <strong>{hookName}</strong></h5>
 			<p>Kinda summary of how I think about the hook.. (Feel free to skip it if it confuses you)</p>
 			{isNotFound ? (
