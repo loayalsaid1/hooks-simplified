@@ -9,7 +9,7 @@ export default function Main() {
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
 				shouldSucceed ? resolve('Hi') : reject('Error');
-w			}, 1000)
+			}, 1000)
 		})
 	}, [shouldSucceed]);
 

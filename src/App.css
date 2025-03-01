@@ -1,38 +1,78 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+  max-width: 100%;
+  min-height: 100vh;
+
+  background-color: hsl(220, 13%, 18%);
+
   color: white;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+
+  
+  scrollbar-width: thin;
+  scrollbar-color: hsl(220, 13%, 75%) hsl(220, 13%, 18%);
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  width: 100%;
+  max-width: 992px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  margin-block: 2rem;
+  padding: 1.5rem;
+
+  background: rgba(255, 255, 255, .15);
+
+  font-size: 1.2rem;
+}
+
+section .subtitle {
+  margin-bottom: .75rem;
+  font-size: 1.5rem;
+}
+section p {
+  margin-top: .5rem;
+  color: #E0E0E0;
+}
+
+pre {
+  max-height: 30rem;
+}
+
+.buttons {
+  margin-bottom: 2rem;
+}
+.source-code {
+  margin-top: 1.5rem;
+}
+
+.hook-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 1rem;
+}
+
+.articles {
+  margin-top: 1.25rem;
+
+  text-align: start;
+}
+.articles a {
+  display: block;
+  color: #d8d8d8;
 }
