@@ -13,8 +13,8 @@ export default function Hook() {
 		<div>
 			<h1>{hookName}</h1>
 			<HookDemo />
-			<HookNotes />
 			<HookCode />
+			<HookNotes />
 			<HookVideo />
 		</div>
 	)
