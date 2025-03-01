@@ -29,56 +29,67 @@ const hooks =  {
 		main: useContextMain,
 		videoLink: "https://www.youtube.com/watch?v=5LrDIWkK_Bc",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useContext',
 	},
 	useRef: {
 		main: useRefMain,
 		videoLink: "https://www.youtube.com/watch?v=t2ypzz6gJm0",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useRef',
 	},
 	useMemo: {
 		main: useMemoMain,
 		videoLink: "https://www.youtube.com/watch?v=THL1OPn72vo",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useMemo',
 	},
 	useCallback: {
 		main: useCallbackMain,
 		videoLink: "https://www.youtube.com/watch?v=_AyFP5s69N4",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useCallback',
 	},
 	useReducer: {
 		main: useReducerMain,
 		videoLink: "https://www.youtube.com/watch?v=kK_Wqx3RnHk",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useReducer',
 	},
 	useTransition: {
 		main: useTransitionMain,
 		videoLink: "https://www.youtube.com/watch?v=N5R6NL3UE7I",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useTransition',
 	},
 	useDeferredValue: {
 		main: useDeferredValueMain,
 		videoLink: "https://www.youtube.com/watch?v=jCGMedd6IWA",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useDeferredValue',
 	},
 	useLayoutEffect: {
 		main: useLayoutEffectMain,
 		videoLink: "https://www.youtube.com/watch?v=wU57kvYOxT4",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useLayoutEffect',
 	},
 	useDebugValue: {
 		main: useDebugValueMain,
 		videoLink: "https://www.youtube.com/watch?v=pTF86K8JZBQ",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useDebugValue',
 	},
 	useImperativeHandle: {
 		main: useImperativeHandleMain,
 		videoLink: "https://www.youtube.com/watch?v=zpEyAOkytkU",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useImperativeHandle',
 	},
 	useId: {
 		main: useIdMain,
 		videoLink: "https://www.youtube.com/watch?v=_vwCKV7f_eA",
 		isCustomHook: false,
+		documentation: 'https://react.dev/reference/react/useId',
 	},
 
 	useLocalStorage: {

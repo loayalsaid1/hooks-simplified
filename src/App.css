@@ -57,5 +57,15 @@ pre {
 .hook-video {
   width: 100%;
   aspect-ratio: 16 / 9;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+}
+
+.articles {
+  margin-top: 1.25rem;
+
+  text-align: start;
+}
+.articles a {
+  display: block;
+  color: #d8d8d8;
 }
