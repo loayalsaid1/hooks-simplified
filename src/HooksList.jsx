@@ -7,7 +7,7 @@ export default function HooksList({ setHookName, setHookData }) {
 	const reactHooksNames = hooksNames.filter(name => !hooks[name].isCustomHook);
 	const customHooksNames = hooksNames.filter(name => hooks[name].isCustomHook);
 	return (
-		<div>
+		<div class="hooks-list">
 			<h3>Choose a hook</h3>
 			<HooksGroup title="⚛ React Hooks" hooksNames={reactHooksNames} setHookName={setHookName}  setHookData={setHookData}/>
 			<HooksGroup title="🧰 Custom Hooks" hooksNames={customHooksNames} setHookName={setHookName}  setHookData={setHookData}/>

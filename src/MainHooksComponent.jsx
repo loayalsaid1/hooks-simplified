@@ -13,7 +13,7 @@ export default function MainHooksComponent() {
     <main>
       <HooksList setHookName={setHookName} setHookData={setHookData}/>
       <hr />
-			
+
       {!hookName ? (
         <div>Choose a hook from the list above</div>
       ) : (
